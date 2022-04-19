@@ -5,12 +5,13 @@
 }
 
 body {
-    background-color: #FFFFFF;
+    background-color: #FFF;
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
 }
+
 
 #header {
     display: flex;
@@ -20,7 +21,8 @@ body {
     align-items: center;
 
     font-size: 40px;
-    color: #EFECCA;
+    color: #000F08;
+    text-shadow: 4px 4px rgba(50,50,70,0.5);
 }
 
 #mainContent {
@@ -34,6 +36,7 @@ body {
 a, a:visited {
     text-decoration: none;
 }
+
 
 .link { 
     display: flex;
@@ -77,4 +80,27 @@ a, a:visited {
 .link:hover { 
     font-size: 4.5rem;
     color: #FF6978;
+}
+
+@media only screen and (max-width: 1024px) {
+    #header {
+        font-size: 2rem;
+    }
+    .link {
+        font-size: 1.5rem;
+        height: 50px;
+    }
+    .link:hover {
+        font-size: 1.6rem;
+    }
+    .icon {
+        display: none;
+    }
+    .gif {
+        display: block;
+    }
+    .link img {
+        height: 50px;
+        width: 50px;
+    }
 }
